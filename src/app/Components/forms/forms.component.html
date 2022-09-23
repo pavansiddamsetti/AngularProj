@@ -1,0 +1,12 @@
+<!-- 
+<form #userName="ngForm" (ngSubmit)="onClickSubmit(userName.value)"> 
+    <input type="text" name="username" placeholder="username" ngModel/> Name<br/>
+    <input type="text" name="age" placeholder="age" ngModel/>Age <br/>
+    <br/> 
+    <br/> 
+    <input type="submit" value="submit"> 
+ </form> -->
+
+ <input type="text" name="username" placeholder="username" [(ngModel)]="user.name"/> Name<br/>
+ <input type="text" name="age" placeholder="uage" [(ngModel)]="user.age"/>Age <br/>
+ <button type="button"  (click)="save()">Submit</button>
